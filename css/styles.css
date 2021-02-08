@@ -45,6 +45,31 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+
+.size-tablet,
+.size-desktop-s,
+.size-desktop-l {
+  display: none;
+}
+
+/* custom */
+.text-img {
+  width: 100%;
+  margin: 2rem auto;
+}
+.service-img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 70%;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+/* end custom */
+
 body,
 html {
   width: 100%;
@@ -1937,6 +1962,26 @@ a:hover.back-to-top {
 /* Min-width width 768px */
 @media (min-width: 768px) {
   /* General Styles */
+
+  .separator {
+    width: 50%;
+    margin: 4.5rem auto 4.5rem auto;
+  }
+
+  .service-img {
+    width: 50%;
+  }
+
+  .size-mobile,
+  .size-desktop-s,
+  .size-desktop-l {
+    display: none;
+  }
+
+  .size-tablet {
+    display: block;
+  }
+
   .p-heading {
     width: 85%;
     margin-right: auto;
@@ -2351,19 +2396,16 @@ a:hover.back-to-top {
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
-  /* custom */
-  .text-img {
-    width: 100%;
-    margin: 2rem auto;
-    display: block;
-  }
-  .service-img {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
+  .size-mobile,
+  .size-tablet,
+  .size-desktop-l {
+    display: none;
   }
 
-  /* end custom */
+  .size-desktop-s {
+    display: block;
+  }
+
   /* General Styles */
   .p-heading {
     width: 55%;
@@ -2534,6 +2576,16 @@ a:hover.back-to-top {
 
 /* Min-width width 1600px */
 @media (min-width: 1600px) {
+  .size-mobile,
+  .size-tablet,
+  .size-desktop-s {
+    display: none;
+  }
+
+  .size-desktop-l {
+    display: block;
+  }
+
   /* Navigation */
   .navbar-custom {
     padding-right: 12rem;
@@ -2613,9 +2665,4 @@ a:hover.back-to-top {
   width: 10rem;
   display: block;
   margin: 1rem auto 1rem auto;
-}
-
-.separator {
-  width: 50%;
-  margin: 4.5rem auto 4.5rem auto;
 }
